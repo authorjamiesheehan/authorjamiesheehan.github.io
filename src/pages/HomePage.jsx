@@ -1,7 +1,9 @@
-// import '../index.css'
+import * as styles from './HomePage.module.css'
 
 export default function HomePage() {
     return (
-        <h1>Home</h1>
+        <div class={styles.homepage}>
+
+        </div>
     )
 }

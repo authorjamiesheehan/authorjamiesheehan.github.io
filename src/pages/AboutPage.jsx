@@ -1,4 +1,4 @@
-// import '../index.css'
+import './AboutPage.module.css'
 
 export default function AboutPage() {
     return (
