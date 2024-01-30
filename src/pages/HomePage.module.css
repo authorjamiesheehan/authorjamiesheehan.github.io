@@ -51,14 +51,6 @@
     a:hover {
       color: #6d91b4;
     }
-
-    /* .substack-link {
-      font-size: 1.2em;
-      font-weight: 300;
-      color: #47698b;
-      margin: 0px 5px 10px 5px;
-      text-align: center; */
-    /* } */
   }
 }
 
@@ -78,4 +70,12 @@
   &:hover {
     color: #1ed560 !important;
   }
+}
+
+.substackLink {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #47698b;
+  margin: 0px 5px 10px 5px;
+  text-align: center;
 }
