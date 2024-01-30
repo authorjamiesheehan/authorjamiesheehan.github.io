@@ -1,4 +1,4 @@
-import Style from './Style.CSS'
+// import '../index.css'
 
 export default function HomePage() {
     return (
