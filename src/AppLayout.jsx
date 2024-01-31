@@ -14,9 +14,9 @@ export default function AppLayout(props) {
           <A href="/contact">Contact</A>
         </div>
       </nav>
-      <div class={styles.mainContent}>
-        {props.children}
-      </div>
+      {/* <div class={styles.mainContent}> */}
+      {props.children}
+      {/* </div> */}
     </div>
   )
 }
