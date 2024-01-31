@@ -8,7 +8,6 @@ function days_to_release() {
   console.log('today is', today)
   console.log('release is', release_day)
   const diff = Math.abs(release_day - today);
-  return 0
   return Math.ceil(diff / ONE_DAY);
 }
 
@@ -17,7 +16,7 @@ export default function BookPage() {
     <div class={styles.mainContent}>
       <img src="/img/hls_ss.jpg" class="shadow" />
       <div>
-        <Show when={days_to_release() >= 1} fallback={<h1>Out Now!</h1>}>
+        <Show when={days_to_release() >= 1} fallback={<h1 class="center-text">Out Now!</h1>}>
           <h1 class="center-text">{`Countdown to Release: ${days_to_release()} day${days_to_release() > 1 ? 's' : ''}!`}</h1>
         </Show>
         <div class={styles.bookDescription}>
