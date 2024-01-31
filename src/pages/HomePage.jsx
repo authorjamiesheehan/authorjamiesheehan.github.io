@@ -20,7 +20,7 @@ export default function HomePage() {
         theme: "custom",
         colors: {
             primary: "#24496C",
-            input: "#F3F4F6",
+            input: "#fff",
             email: "#24496C",
             text: "#F3F4F6",
         }
