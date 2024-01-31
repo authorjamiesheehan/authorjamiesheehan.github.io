@@ -2,6 +2,7 @@ import { createEffect, onCleanup } from "solid-js";
 import * as styles from "./ContactPage.module.css";
 
 export default function ContactPage() {
+    document.title = 'Jamie Sheehan | Contact'
     return (
         <div class={styles.mainContent}>
             <img src="/img/contact_min.webp" class="shadow" />

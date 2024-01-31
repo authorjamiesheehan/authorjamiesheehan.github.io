@@ -1,6 +1,7 @@
 import * as styles from './AboutPage.module.css'
 
 export default function AboutPage() {
+    document.title = 'Jamie Sheehan | About'
     return (
         <>
             <div class={styles.mainContent}>

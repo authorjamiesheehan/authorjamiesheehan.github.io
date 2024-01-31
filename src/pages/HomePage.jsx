@@ -12,7 +12,7 @@ const footerQuote = {
 
 
 export default function HomePage() {
-
+    document.title = 'Jamie Sheehan | Home'
     window.CustomSubstackWidget = {
         substackUrl: "jamiesheehan.substack.com",
         placeholder: "example@gmail.com",

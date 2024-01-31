@@ -12,6 +12,7 @@ function days_to_release() {
 }
 
 export default function BookPage() {
+  document.title = 'Jamie Sheehan | Books'
   return (
     <div class={styles.mainContent}>
       <img src="/img/hls_ss.jpg" class="shadow" />
