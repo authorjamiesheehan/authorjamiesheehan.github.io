@@ -10,6 +10,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --homepage-social-links-color: #333;
+  /* --homepage-social-links-color: #24496c; */
+  --homepage-social-links-hover: #777;
+  /* --homepage-social-links-hover: #6d91b4; */
 }
 
 ::selection {

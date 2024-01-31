@@ -44,12 +44,12 @@
 
     a:link,
     a:visited {
-      color: #24496c;
+      color: var(--homepage-social-links-color);
     }
 
     a:active,
     a:hover {
-      color: #6d91b4;
+      color: var(--homepage-social-links-hover);
     }
   }
 }
@@ -75,7 +75,8 @@
 .substackLink {
   font-size: 1.2em;
   font-weight: 300;
-  color: #47698b;
+  color: var(--homepage-social-links-color);
+  /* color: #47698b; */
   margin: 0px 5px 10px 5px;
   text-align: center;
 }

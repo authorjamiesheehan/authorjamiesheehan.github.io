@@ -19,10 +19,10 @@ export default function HomePage() {
         buttonText: "Subscribe",
         theme: "custom",
         colors: {
-            primary: "#24496C",
+            primary: "#333",
             input: "#fff",
-            email: "#24496C",
-            text: "#F3F4F6",
+            email: "#333",
+            text: "#eee",
         }
     }
 

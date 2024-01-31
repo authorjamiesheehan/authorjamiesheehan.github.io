@@ -25,7 +25,7 @@
   display: grid;
   /* grid-template-columns: 20px 1fr 20px; */
   grid-template-columns: 4% 1fr 4%;
-  grid-template-rows: var(--nav-bar-height) auto 100px;
+  grid-template-rows: var(--nav-bar-height) auto auto;
   /* grid-column-gap: 0px; */
   /* grid-row-gap: 0px; */
   /* border: 1px solid red; */
