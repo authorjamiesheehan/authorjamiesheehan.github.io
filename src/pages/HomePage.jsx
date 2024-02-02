@@ -40,7 +40,7 @@ export default function HomePage() {
         <>
             <div class={`${styles.homepage} ${styles.mainContent}`} >
                 <img
-                    src="/img/home_anton-sharov-unsplash-min.webp"
+                    src="/img/HomePage-min.webp"
                     alt="Wooden walkway leading to ocean beach."
                 />
                 <div class={styles.links}>
