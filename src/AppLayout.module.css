@@ -22,7 +22,7 @@
 }
 
 .logo {
-  font-size: 7vw;
+  font-size: 8.5vw;
 
   @media (min-width: 600px) {
     font-size: 2.5em;

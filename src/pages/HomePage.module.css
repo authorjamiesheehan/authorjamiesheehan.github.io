@@ -25,13 +25,12 @@
     ul {
       display: flex;
       min-width: fit-content;
-      width: 60%;
+      width: 100%;
       margin: 10px auto;
       padding: 30px 0px;
       padding-bottom: 10px;
-      gap: 30px;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
 
       li {
         list-style-type: none;
