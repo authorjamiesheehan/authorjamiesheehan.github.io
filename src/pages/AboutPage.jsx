@@ -5,7 +5,10 @@ export default function AboutPage() {
     return (
         <>
             <div class={styles.mainContent}>
-                <img src="/img/about_min.webp" class="shadow" />
+                <picture>
+                    <source media="(min-width:980px)" srcset="/img/about_min.webp" />
+                    <img src="/img/about_mobile_min.webp" class="shadow" />
+                </picture>
                 <div>
                     <h1 class="center-text">About Jamie</h1>
                     <div class={styles.aboutDescription}>
