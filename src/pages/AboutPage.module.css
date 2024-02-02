@@ -38,7 +38,7 @@
   flex-direction: column;
   gap: 30px;
   text-align: justify;
-  @media (min-width: 980px){
+  @media (min-width: 980px) {
     text-align: left;
   }
 }
