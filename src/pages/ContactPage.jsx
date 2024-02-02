@@ -1,4 +1,4 @@
-import { createEffect, onCleanup } from "solid-js";
+import { onMount } from "solid-js";
 import * as styles from "./ContactPage.module.css";
 
 export default function ContactPage() {
@@ -64,18 +64,15 @@ export default function ContactPage() {
 }
 
 const IgEmbed = () => {
-    createEffect(() => {
-        const connectIGScript = () => {
-            const ig_script = document.createElement("script");
-            ig_script.src = "//www.instagram.com/embed.js";
-            const ig_root = document.getElementsByClassName("ig_embed")[0];
-            ig_root.appendChild(ig_script);
-        };
-        window.addEventListener("load", connectIGScript);
-        onCleanup(() => {
-            window.removeEventListener('load', connectIGScript);
-        });
-    });
+
+    const connectIGScript = () => {
+        const ig_script = document.createElement("script");
+        ig_script.src = "//www.instagram.com/embed.js";
+        const ig_root = document.getElementsByClassName("ig_embed")[0];
+        ig_root.appendChild(ig_script);
+    };
+
+    onMount(connectIGScript)
 
     return (
         <div class="ig_embed">

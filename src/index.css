@@ -83,6 +83,7 @@ em {
   display: flex;
   justify-content: center;
   width: 100%;
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
   /* min-height: 576px; */
 }
 
@@ -90,6 +91,7 @@ em {
 #instagram-media-payload-0 {
   max-width: 80vw !important;
   min-width: 0px !important;
+  border: 0 !important;
 }
 
 .shadow {
