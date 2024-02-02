@@ -5,8 +5,6 @@ function days_to_release() {
   const ONE_DAY = 1000 * 60 * 60 * 24;
   const today = new Date().getTime()
   const release_day = new Date('March 24, 2024').getTime()
-  console.log('today is', today)
-  console.log('release is', release_day)
   const diff = Math.abs(release_day - today);
   return Math.ceil(diff / ONE_DAY);
 }
