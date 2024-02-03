@@ -1,13 +1,9 @@
-import { Title } from '@solidjs/meta'
 import * as styles from './AboutPage.module.css'
 
 export default function AboutPage() {
-    // document.title = 'Jamie Sheehan | About'
+    document.title = 'Jamie Sheehan | About'
     return (
         <>
-            <>
-                <Title>Jamie Sheehan | About</Title>
-            </>
             <div class={styles.mainContent}>
                 <picture>
                     <source media="(min-width:980px)" srcset="/img/about_min.webp" />
