@@ -1,9 +1,13 @@
+import { Title } from '@solidjs/meta'
 import * as styles from './AboutPage.module.css'
 
 export default function AboutPage() {
-    document.title = 'Jamie Sheehan | About'
+    // document.title = 'Jamie Sheehan | About'
     return (
         <>
+            <>
+                <Title>Jamie Sheehan | About</Title>
+            </>
             <div class={styles.mainContent}>
                 <picture>
                     <source media="(min-width:980px)" srcset="/img/about_min.webp" />
@@ -22,7 +26,7 @@ export default function AboutPage() {
                             When not writing, she can be found playing racket sports, baking chocolate chip cookies and pastries, trailing her husband to disc golf courses around the PNW, and spending far too much time with her espresso machine.
                         </p>
                         <p>
-                            Jamie is a Christian; though she doesn't explicitly write Christian fiction, it's important to her that her stories point to God.
+                            Though Jamie is a Christian, she doesn't write explicitly Christian fiction.
                         </p>
 
                     </div>
