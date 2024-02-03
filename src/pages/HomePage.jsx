@@ -42,7 +42,7 @@ export default function HomePage() {
                 <img
                     class="shadow"
                     src="/img/HomePage-min.webp"
-                    alt="Wooden walkway leading to ocean beach."
+                    alt="Books, coffee, and sunglasses with an ocean view in the background"
                 />
                 <div class={styles.links}>
                     <ul>

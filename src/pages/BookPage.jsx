@@ -14,7 +14,7 @@ export default function BookPage() {
   return (
     <>
       <div class={styles.mainContent}>
-        <img src="/img/hls_ss.jpg" class="shadow" />
+        <img src="/img/hls_ss.jpg" class="shadow" alt="Hearts Like Silver book cover" />
         <div>
           <Show when={days_to_release() >= 1} fallback={<h1 class="center-text">Out Now!</h1>}>
             <h1 class="center-text">{`Countdown to Release: ${days_to_release()} day${days_to_release() > 1 ? 's' : ''}!`}</h1>

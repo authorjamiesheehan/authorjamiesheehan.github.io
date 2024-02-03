@@ -7,7 +7,7 @@ export default function AboutPage() {
             <div class={styles.mainContent}>
                 <picture>
                     <source media="(min-width:980px)" srcset="/img/about_min.webp" />
-                    <img src="/img/about_mobile_min.webp" class="shadow" />
+                    <img src="/img/about_mobile_min.webp" class="shadow" alt="Moka pot with a cup of espresso" />
                 </picture>
                 <div>
                     <h1 class="center-text">About Jamie</h1>

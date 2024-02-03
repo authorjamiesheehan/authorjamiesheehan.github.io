@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
         <>
             <div class={styles.mainContent}>
-                <img src="/img/contact_min.webp" class="shadow" />
+                <img src="/img/contact_min.webp" class="shadow" alt="Journals, a pen, and a cup of coffee on a wooden surface" />
                 <div>
                     <section class="intro" id="learn_more">
                         <br />
