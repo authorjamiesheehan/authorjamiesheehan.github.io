@@ -29,7 +29,7 @@ export default function AboutPage() {
 
                 </div>
             </div>
-            <div class={styles.quoteBlock}>
+            <div class="quoteBlock">
                 <p>"{footerQuote.quote}"</p>
                 <p>— {footerQuote.attribution}</p>
             </div>

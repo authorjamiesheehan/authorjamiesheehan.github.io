@@ -102,3 +102,21 @@ em {
 .shadow {
   box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.2);
 }
+
+.quoteBlock {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  p {
+    max-width: 100ch;
+    text-align: center;
+  }
+  p:last-child {
+    text-wrap: nowrap;
+  }
+}

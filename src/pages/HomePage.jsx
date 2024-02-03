@@ -61,7 +61,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-            <div class={styles.quoteBlock}>
+            <div class="quoteBlock">
                 <p>"{footerQuote.quote}"</p>
                 <p>— {footerQuote.attribution}</p>
             </div>
