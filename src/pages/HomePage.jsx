@@ -40,6 +40,7 @@ export default function HomePage() {
         <>
             <div class={`${styles.homepage} ${styles.mainContent}`} >
                 <img
+                    class="shadow"
                     src="/img/HomePage-min.webp"
                     alt="Wooden walkway leading to ocean beach."
                 />
