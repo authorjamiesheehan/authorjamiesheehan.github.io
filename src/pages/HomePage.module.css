@@ -85,7 +85,7 @@
 .mainContent {
   grid-column: 2/3;
   grid-row: 2/3;
-  min-height: calc(100vh - var(--nav-bar-height));
+  min-height: calc(100dvh - var(--nav-bar-height));
 }
 
 .quoteBlock {
