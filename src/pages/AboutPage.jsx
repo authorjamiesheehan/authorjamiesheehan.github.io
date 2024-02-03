@@ -38,7 +38,7 @@ export default function AboutPage() {
 }
 
 const footerQuote = {
-    quote: "Every author ought to write every book as if he were going to be beheaded the day he finished it.",
-    attribution: "F. Scott Fitzgerald",
-    title: "This Side of Paradise"
+    quote: "What we want is not more little books about Christianity, but more little books by Christians on other subjects—with their Christianity latent.",
+    attribution: "C. S. Lewis",
+    title: "Christian Apologetics"
 }

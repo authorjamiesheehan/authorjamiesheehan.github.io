@@ -4,63 +4,76 @@ import * as styles from "./ContactPage.module.css";
 export default function ContactPage() {
     document.title = 'Jamie Sheehan | Contact'
     return (
-        <div class={styles.mainContent}>
-            <img src="/img/contact_min.webp" class="shadow" />
-            <div>
-                <section class="intro" id="learn_more">
-                    <br />
-                    <p>
-                        Subscribe to my archeology-themed newsletter,{" "}
-                        <a
-                            href="https://substack.com/profile/132807708-jamie-sheehan"
-                            target="_blank"
-                        >
-                            The Ink-Dipped Trowel
-                        </a>
-                        .
-                    </p>
-                    <p>
-                        Follow me on{" "}
-                        <a href="https://www.pinterest.com/authorjamiesheehan/">
-                            Pinterest
-                        </a>
-                        ,{" "}
-                        <a
-                            href="https://www.goodreads.com/user/show/44081734-jamie-danae"
-                            target="_blank"
-                        >
-                            Goodreads
-                        </a>
-                        , or{" "}
-                        <a
-                            href="https://www.instagram.com/authorjamiesheehan"
-                            target="_blank"
-                        >
-                            Instagram
-                        </a>
-                        !{" "}
-                    </p>
-                    <br />
-                    <IgEmbed />
-                    <br />
-                    <p>
-                        Please contact{" "}
-                        <a href="https://goldpearlpress.com/" target="_blank">
-                            Gold Pearl Press
-                        </a>{" "}
-                        for events, media, ARC requests, and other inquiries.
-                    </p>
-                    <p>
-                        If you email me directly at{" "}
-                        <a href="mailto:authorjamiesheehan@gmail.com">
-                            authorjamiesheehan@gmail.com
-                        </a>
-                        , I will do my best to respond to you!
-                    </p>
-                </section>
+        <>
+            <div class={styles.mainContent}>
+                <img src="/img/contact_min.webp" class="shadow" />
+                <div>
+                    <section class="intro" id="learn_more">
+                        <br />
+                        <p>
+                            Subscribe to my archeology-themed newsletter,{" "}
+                            <a
+                                href="https://substack.com/profile/132807708-jamie-sheehan"
+                                target="_blank"
+                            >
+                                The Ink-Dipped Trowel
+                            </a>
+                            .
+                        </p>
+                        <p>
+                            Follow me on{" "}
+                            <a href="https://www.pinterest.com/authorjamiesheehan/">
+                                Pinterest
+                            </a>
+                            ,{" "}
+                            <a
+                                href="https://www.goodreads.com/user/show/44081734-jamie-danae"
+                                target="_blank"
+                            >
+                                Goodreads
+                            </a>
+                            , or{" "}
+                            <a
+                                href="https://www.instagram.com/authorjamiesheehan"
+                                target="_blank"
+                            >
+                                Instagram
+                            </a>
+                            !{" "}
+                        </p>
+                        <br />
+                        <IgEmbed />
+                        <br />
+                        <p>
+                            Please contact{" "}
+                            <a href="https://goldpearlpress.com/" target="_blank">
+                                Gold Pearl Press
+                            </a>{" "}
+                            for events, media, ARC requests, and other inquiries.
+                        </p>
+                        <p>
+                            If you email me directly at{" "}
+                            <a href="mailto:authorjamiesheehan@gmail.com">
+                                authorjamiesheehan@gmail.com
+                            </a>
+                            , I will do my best to respond to you!
+                        </p>
+                    </section>
+                </div>
             </div>
-        </div>
+            <div class={styles.quoteBlock}>
+                <p>"{footerQuote.quote}"</p>
+                <p>— {footerQuote.attribution}</p>
+            </div>
+        </>
     );
+}
+
+
+const footerQuote = {
+    quote: "Be kind, have courage and always believe in a little magic.",
+    attribution: "Cinderella",
+    title: "Cinderella"
 }
 
 const IgEmbed = () => {
