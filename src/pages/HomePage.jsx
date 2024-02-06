@@ -41,7 +41,7 @@ export default function HomePage() {
             <div class={`${styles.homepage} ${styles.mainContent}`} >
                 <img
                     class="shadow"
-                    src="/img/HomePage-min.webp"
+                    src="/img/HomePage_alt-min.webp"
                     alt="Books, coffee, and sunglasses with an ocean view in the background"
                 />
                 <div class={styles.links}>
