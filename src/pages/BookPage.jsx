@@ -1,26 +1,14 @@
-import { Show } from 'solid-js';
 import * as styles from './BookPage.module.css'
-
-function days_to_release() {
-  const ONE_DAY = 1000 * 60 * 60 * 24;
-  const today = new Date().getTime()
-  const release_day = new Date('2024-03-24T07:00:00.000Z').getTime()
-  const diff = Math.abs(release_day - today);
-  return Math.ceil(diff / ONE_DAY);
-}
-
-function isAfterReleaseDate() {
-  const now = new Date();
-  const releaseDate = new Date('2024-03-24T07:00:00.000Z');
-  return now >= releaseDate;
-}
 
 const purchase_links = [
   { name: "Amazon", url: "https://www.amazon.com/Hearts-Like-Silver-Jamie-Sheehan-ebook/dp/B0CW1PT788/" },
+  { name: "Apple Books", url: "https://books.apple.com/us/book/hearts-like-silver/id6477547896" },
   { name: "Barnes & Noble", url: "https://www.barnesandnoble.com/w/hearts-like-silver-jamie-sheehan/1144836949" },
-  { name: "Booktopia", url: "https://www.booktopia.com.au/hearts-like-silver-jamie-sheehan/book/9798989820290.html" },
-  { name: "Bookshop", url: "https://bookshop.org/p/books/hearts-like-silver-jamie-sheehan/21274744" },
   { name: "Books2Read", url: "https://books2read.com/heartslikesilver" },
+  { name: "Bookshop", url: "https://bookshop.org/p/books/hearts-like-silver-jamie-sheehan/21274744" },
+  { name: "Booktopia", url: "https://www.booktopia.com.au/hearts-like-silver-jamie-sheehan/book/9798989820290.html" },
+  { name: "Kobo", url: "https://www.kobo.com/us/en/ebook/hearts-like-silver" },
+  { name: "Ingram Spark", url: "https://shop.ingramspark.com/b/084" },
 ]
 
 export default function BookPage() {
@@ -30,31 +18,27 @@ export default function BookPage() {
       <div class={styles.mainContent}>
         <img src="/img/hls_ss.jpg" class="shadow" alt="Hearts Like Silver book cover" />
         <div>
-          <Show when={!isAfterReleaseDate()} fallback={<h1 class="center-text">Countdown to Release: Out Now!</h1>}>
-            <h1 class="center-text">{`Countdown to Release: ${days_to_release()} day${days_to_release() > 1 ? 's' : ''}!`}</h1>
-          </Show>
-          <Show when={isAfterReleaseDate()}>
-            <div class={styles.purchaseLinks}>
-              <p>Available at:</p>
-              <div>
-                <ul>
-                  <For each={purchase_links.slice(0, 2)}>
-                    {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
-                  </For>
-                </ul>
-                <ul>
-                  <For each={purchase_links.slice(2, 4)}>
-                    {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
-                  </For>
-                </ul>
-                <ul>
-                  <For each={purchase_links.slice(4)}>
-                    {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
-                  </For>
-                </ul>
-              </div>
+          <div class={styles.purchaseLinks}>
+            <h1>Hearts Like Silver</h1>
+            <p>Available at:</p>
+            <div>
+              <ul>
+                <For each={purchase_links.slice(0, 3)}>
+                  {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
+                </For>
+              </ul>
+              <ul>
+                <For each={purchase_links.slice(3, 6)}>
+                  {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
+                </For>
+              </ul>
+              <ul>
+                <For each={purchase_links.slice(6)}>
+                  {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
+                </For>
+              </ul>
             </div>
-          </Show>
+          </div>
           <div class={styles.bookDescription}>
             <p class="bold center-text">Queen. Redcape. Sorceress. Human.</p>
             <h6 class={`${styles.dateHeading} center-text`}>13th-14th Century, Scotland </h6>
@@ -74,17 +58,9 @@ export default function BookPage() {
               <em>
                 Pitched as </em>Outlander<em> meets </em>Grave Mercy<em> but with more gore and less romance, </em>Hearts Like Silver<em> is a dark, historical fantasy that explores themes of forgiveness, redemption, and freedom. <br />
               </em>
-              <br />
-              <Show when={!isAfterReleaseDate()}>
-                Coming March 24, 2024.
-              </Show>
             </p>
-
-            {/* <p class="tiny-text center-text">
-              Coming March 24, 2024
-            </p> */}
           </div>
-        </div >
+        </div>
       </div >
       <div class="quoteBlock">
         <p>"{footerQuote.quote}"</p>
