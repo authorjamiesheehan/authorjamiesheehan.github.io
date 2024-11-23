@@ -50,8 +50,11 @@
 
 .links {
   display: flex;
-  gap: 20px;
-
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
   a:hover,
   a:active {
     color: #555;

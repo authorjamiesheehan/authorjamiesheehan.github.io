@@ -54,6 +54,15 @@
   }
 }
 
+.gridCenter {
+  /* border: 1px solid Coral; */
+  align-self: center;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
 .bookDescription {
   display: flex;
   flex-direction: column;
@@ -87,6 +96,33 @@
     justify-content: center;
     border-top: 2px solid #aaa;
     border-bottom: 2px solid #aaa;
+  }
+
+  margin-bottom: 15px;
+}
+
+.substackLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  div {
+    padding: 12px 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    justify-items: center;
+    gap: 10px;
+    justify-content: center;
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    text-align: center;
   }
 
   margin-bottom: 15px;

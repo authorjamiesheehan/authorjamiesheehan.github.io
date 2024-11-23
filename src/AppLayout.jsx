@@ -11,6 +11,7 @@ export default function AppLayout(props) {
           <A href="/">Home</A>
           <A href="/about">About</A>
           <A href="/books">Books</A>
+          <A href="/fables">Fables</A>
           <A href="/contact">Contact</A>
         </div>
       </nav>

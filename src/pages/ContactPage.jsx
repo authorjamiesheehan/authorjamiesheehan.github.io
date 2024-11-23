@@ -15,7 +15,7 @@ export default function ContactPage() {
                         <p>
                             Subscribe to my archeology-themed newsletter,{" "}
                             <a
-                                href="https://substack.com/profile/132807708-jamie-sheehan"
+                                href="https://jamiesheehan.substack.com"
                                 target="_blank"
                             >
                                 The Ink-Dipped Trowel
