@@ -1,8 +1,8 @@
-import { For, createEffect, onCleanup } from "solid-js";
-import * as styles from "./HomePage.module.css";
+import { For, createEffect, onCleanup } from "solid-js"
+import * as styles from "./HomePage.module.css"
 
-import { FaBrandsGoodreadsG, FaBrandsInstagram, FaBrandsPinterest, FaBrandsSpotify } from 'solid-icons/fa';
-import { IoMailOutline } from 'solid-icons/io';
+import { FaBrandsGoodreadsG, FaBrandsInstagram, FaBrandsPinterest, FaBrandsSpotify } from 'solid-icons/fa'
+import { IoMailOutline } from 'solid-icons/io'
 
 
 const footerQuote = {
@@ -41,7 +41,7 @@ export default function HomePage() {
             <div class={`${styles.homepage} ${styles.mainContent}`} >
                 <img
                     class="shadow"
-                    src="/img/HomePage_alt-min.webp"
+                    src="/img/homepage_min.webp"
                     alt="Books, coffee, and sunglasses with an ocean view in the background"
                 />
                 <div class={styles.links}>
@@ -67,7 +67,7 @@ export default function HomePage() {
                 <p>— {footerQuote.attribution}</p>
             </div>
         </>
-    );
+    )
 }
 
 const myLinks = [

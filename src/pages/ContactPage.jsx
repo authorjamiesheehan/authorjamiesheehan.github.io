@@ -1,12 +1,14 @@
-import { onMount } from "solid-js";
-import * as styles from "./ContactPage.module.css";
+import { onMount } from "solid-js"
+import * as styles from "./ContactPage.module.css"
 
 export default function ContactPage() {
     document.title = 'Jamie Sheehan | Contact'
     return (
         <>
             <div class={styles.mainContent}>
-                <img src="/img/contact_min.webp" class="shadow" alt="Journals, a pen, and a cup of coffee on a wooden surface" />
+                <img
+                    src="/img/contact-page_min.webp"
+                    class="shadow" alt="Journals, a pen, and a cup of coffee on a wooden surface" />
                 <div>
                     <section class="intro" id="learn_more">
                         <br />
@@ -66,7 +68,7 @@ export default function ContactPage() {
                 <p>— {footerQuote.attribution}</p>
             </div>
         </>
-    );
+    )
 }
 
 
@@ -79,11 +81,11 @@ const footerQuote = {
 const IgEmbed = () => {
 
     const connectIGScript = () => {
-        const ig_script = document.createElement("script");
-        ig_script.src = "//www.instagram.com/embed.js";
-        const ig_root = document.getElementsByClassName("ig_embed")[0];
-        ig_root.appendChild(ig_script);
-    };
+        const ig_script = document.createElement("script")
+        ig_script.src = "//www.instagram.com/embed.js"
+        const ig_root = document.getElementsByClassName("ig_embed")[0]
+        ig_root.appendChild(ig_script)
+    }
 
     onMount(connectIGScript)
 
@@ -184,5 +186,5 @@ const IgEmbed = () => {
                 </div>
             </blockquote>
         </div>
-    );
-};
+    )
+}

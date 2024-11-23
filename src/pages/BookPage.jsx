@@ -2,13 +2,11 @@ import * as styles from './BookPage.module.css'
 
 const purchase_links = [
   { name: "Amazon", url: "https://www.amazon.com/Hearts-Like-Silver-Jamie-Sheehan-ebook/dp/B0CW1PT788/" },
-  { name: "Apple Books", url: "https://books.apple.com/us/book/hearts-like-silver/id6477547896" },
   { name: "Barnes & Noble", url: "https://www.barnesandnoble.com/w/hearts-like-silver-jamie-sheehan/1144836949" },
-  { name: "Books2Read", url: "https://books2read.com/heartslikesilver" },
-  { name: "Bookshop", url: "https://bookshop.org/p/books/hearts-like-silver-jamie-sheehan/21274744" },
+  { name: "Indiebound", url: "https://bookshop.org/p/books/hearts-like-silver-jamie-sheehan/21274744" },
   { name: "Booktopia", url: "https://www.booktopia.com.au/hearts-like-silver-jamie-sheehan/book/9798989820290.html" },
-  { name: "Kobo", url: "https://www.kobo.com/us/en/ebook/hearts-like-silver" },
   { name: "Ingram Spark", url: "https://shop.ingramspark.com/b/084" },
+  { name: "Apple Books, Kobo, Everand, Thalia, Smashwords, Angus & Robertson, Mondadori, Vivlio, Palace Marketplace, Hoopla, Fable", url: "https://books2read.com/heartslikesilver" },
 ]
 
 export default function BookPage() {
@@ -16,27 +14,25 @@ export default function BookPage() {
   return (
     <>
       <div class={styles.mainContent}>
-        <img src="/img/hls_ss.jpg" class="shadow" alt="Hearts Like Silver book cover" />
+        <img src="/img/hls_bright_min.webp" class="shadow" alt="Hearts Like Silver book cover" />
         <div>
           <div class={styles.purchaseLinks}>
             <h1>Hearts Like Silver</h1>
             <p>Available at:</p>
             <div>
               <ul>
-                <For each={purchase_links.slice(0, 3)}>
+                <For each={purchase_links.slice(0, -1)}>
                   {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
                 </For>
               </ul>
               <ul>
-                <For each={purchase_links.slice(3, 6)}>
-                  {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
-                </For>
+                <li><a target="_blank" rel="noopener noreferrer" href={purchase_links.at(-1).url}>{purchase_links.at(-1).name}</a></li>
               </ul>
-              <ul>
+              {/* <ul>
                 <For each={purchase_links.slice(6)}>
                   {(link) => <li><a target="_blank" rel="noopener noreferrer" href={link.url}>{link.name}</a></li>}
                 </For>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div class={styles.bookDescription}>

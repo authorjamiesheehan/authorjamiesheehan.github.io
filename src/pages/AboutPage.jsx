@@ -21,9 +21,6 @@ export default function AboutPage() {
                         <p>
                             When not writing, she can be found playing racket sports, baking chocolate chip cookies and pastries, trailing her husband to disc golf courses around the PNW, and spending far too much time with her espresso machine.
                         </p>
-                        <p>
-                            Though Jamie is a Christian, she doesn't write explicitly Christian fiction.
-                        </p>
 
                     </div>
 
