@@ -2,7 +2,7 @@
 import { render } from 'solid-js/web'
 
 import { HashRouter, Route } from '@solidjs/router'
-import App from './AppLayout'
+import AppLayout from './AppLayout'
 import './index.css'
 import AboutPage from './pages/AboutPage'
 import BookPage from './pages/BookPage'
@@ -13,7 +13,7 @@ import HomePage from './pages/HomePage'
 const root = document.getElementById('root')
 
 render(() => (
-    <HashRouter root={App}>
+    <HashRouter root={AppLayout}>
         <Route path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/books" component={BookPage} />

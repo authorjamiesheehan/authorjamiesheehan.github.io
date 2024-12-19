@@ -18,16 +18,16 @@ export default function FablesPage() {
           </div>
         </div>
       </div >
-      {/* <div class="quoteBlock">
+      <div class="quoteBlock">
         <p>"{footerQuote.quote}"</p>
         <p>— {footerQuote.attribution}</p>
-      </div> */}
+      </div>
     </>
   )
 }
 
 const footerQuote = {
-  quote: "",
-  attribution: "",
+  quote: "And men go abroad to admire the heights of mountains, the mighty billows of the sea, the broad tides of rivers, the compass of the ocean, and the circuits of the stars, and pass themselves by.",
+  attribution: "Augustine of Hippo",
   title: ""
 }
